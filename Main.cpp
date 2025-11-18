@@ -26,9 +26,7 @@ HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 #include "MenuFunctions.cpp"
 
 int main() {
-    // loadfromFile();
     loadBinary();
-    // loadStudents();
     int choice;
     
     do{
@@ -59,7 +57,6 @@ int main() {
     }while(choice != 0);
     saveBinary();
     SetConsoleTextAttribute(h, 7);  // Light Gray (default)
-    // AddToFiles();
     delete []studentsID;
     delete []names;
     for(int i = 0; i < studentCount; i++)
@@ -76,3 +73,4 @@ int main() {
     return 0;
 
 }
+
