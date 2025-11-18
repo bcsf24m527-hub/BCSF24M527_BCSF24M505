@@ -60,5 +60,19 @@ int main() {
     saveBinary();
     SetConsoleTextAttribute(h, 7);  // Light Gray (default)
     // AddToFiles();
+    delete []studentsID;
+    delete []names;
+    for(int i = 0; i < studentCount; i++)
+        delete []marks[i];
+    delete []marks;
+    delete []totalMarks;
+    delete []percentage;
+    for(int i = 0; i < daysCount; i++)
+        delete []attendance[i];
+    delete []attendance;
+    delete []totalPresent;
+    delete []attendancePercentage;
+    delete []Subjects;
     return 0;
+
 }
