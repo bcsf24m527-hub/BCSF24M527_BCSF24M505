@@ -31,3 +31,5 @@ Here We are dealing with total of four things
   Add binary files which automatically updates at the termination of program timw and if binary file not found at the starting of program it will load date from text file
   Included an option for user to add data to respective text files
   User can see data from text files
+# How to Run!!
+Run Main.cpp and the program will run
